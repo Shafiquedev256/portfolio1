@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
 
 const Header = () => {
-  const [open, setOpen] = useState(false);
   return (
     <header className='bg-gray-900 dark:bg-gray-200 z-50 sticky top-0 lg:px-16 px-4 flex flex-wrap items-center py-4 bg-gray-850 shadow-md'>
       <div className='flex-1 flex justify-between items-center'>
@@ -13,12 +11,7 @@ const Header = () => {
           Shafiq.
         </Link>
       </div>
-      <label
-        className='cursor-pointer md:hidden block'
-        onClick={() => {
-          setOpen((state) => !state);
-        }}
-      >
+      <label className='cursor-pointer md:hidden block'>
         <svg
           className='fill-current text-gray-200'
           xmlns='http://www.w3.org/2000/svg'
