@@ -1,13 +1,29 @@
+import { useScroll, motion, useTransform } from "motion/react";
+import { useRef } from "react";
 import { Link } from "react-router-dom";
 
 const Portfolio = () => {
+  const ref = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["0 1", "1.1 1"],
+  });
+  const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
+  const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
   return (
     <>
       <section className='pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] text-white font-body'>
         <div className='container mx-auto'>
           <div className='flex flex-wrap -mx-4'>
             <div className='w-full flex flex-col justify-center items-center px-4'>
-              <div className=' mb-[60px] max-w-[510px] text-center'>
+              <motion.div
+                ref={ref}
+                style={{
+                  scale: scaleProgress,
+                  opacity: opacityProgress,
+                }}
+                className=' mb-[60px] max-w-[510px] text-center'
+              >
                 <span className='text-primary mb-2 block text-lg font-semibold text-rose-500'>
                   My Portfolio
                 </span>
@@ -21,7 +37,7 @@ const Portfolio = () => {
                   needs, delivering high-quality results, and exceeding
                   expectations.
                 </p>
-              </div>
+              </motion.div>
             </div>
           </div>
 
@@ -87,9 +103,23 @@ const PortfolioCard = ({
   button,
   buttonHref,
 }: any) => {
+  const ref = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["0 1", "1.1 1"],
+  });
+  const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
+  const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
   return (
     <>
-      <div className={"w-[90%] px-4 md:w-1/2 xl:w-1/3 "}>
+      <motion.div
+        ref={ref}
+        style={{
+          scale: scaleProgress,
+          opacity: opacityProgress,
+        }}
+        className={"w-[90%] px-4 md:w-1/2 xl:w-1/3 "}
+      >
         <div className='relative mb-12'>
           <div className='overflow-hidden rounded-[10px]'>
             <img src={ImageHref} alt='portfolio' className='w-full' />
@@ -109,7 +139,7 @@ const PortfolioCard = ({
             </Link>
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };
