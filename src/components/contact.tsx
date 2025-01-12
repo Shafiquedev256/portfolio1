@@ -1,7 +1,7 @@
 const Contact = () => {
   return (
     <>
-      <section className='relative z-10 overflow-hidden font-body text-white py-20 dark:bg-dark lg:py-[120px]'>
+      <section className='relative z-10 w-[100%] overflow-hidden font-body text-white py-20 dark:bg-dark lg:py-[120px]'>
         <div className='container'>
           <div className='mx-4 flex flex-wrap lg:justify-between'>
             <div className='w-full px-4 lg:w-1/2 xl:w-6/12'>
