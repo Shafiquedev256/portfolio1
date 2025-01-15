@@ -1,4 +1,14 @@
+import { useScroll, motion, useTransform } from "motion/react";
+import { useRef } from "react";
+
 const About1 = () => {
+  const ref = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["0 1", "1.1 1"],
+  });
+  const scaleProgress = useTransform(scrollYProgress, [0, 0.5], [0.8, 1]);
+  const opacityProgress = useTransform(scrollYProgress, [0, 0.5], [0.8, 1]);
   return (
     <>
       <section className='overflow-hidden font-body pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] text-white'>
@@ -7,23 +17,44 @@ const About1 = () => {
             <div className='w-full px-4 lg:w-6/12'>
               <div className='flex items-center mx-3 sm:-mx-4'>
                 <div className='w-full px-3 sm:px-4 xl:w-1/2'>
-                  <div className='py-3 sm:py-4'>
+                  <motion.div
+                    ref={ref}
+                    style={{
+                      scale: scaleProgress,
+                      opacity: opacityProgress,
+                    }}
+                    className='py-3 sm:py-4'
+                  >
                     <img
                       src='https://i.ibb.co/gFb3ns6/image-1.jpg'
                       alt=''
                       className='w-full rounded-2xl'
                     />
-                  </div>
-                  <div className='py-3 sm:py-4'>
+                  </motion.div>
+                  <motion.div
+                    ref={ref}
+                    style={{
+                      scale: scaleProgress,
+                      opacity: opacityProgress,
+                    }}
+                    className='py-3 sm:py-4'
+                  >
                     <img
                       src='https://i.ibb.co/rfHFq15/image-2.jpg'
                       alt=''
                       className='w-full rounded-2xl'
                     />
-                  </div>
+                  </motion.div>
                 </div>
                 <div className='w-full px-3 sm:px-4 xl:w-1/2'>
-                  <div className='relative z-10 my-4'>
+                  <motion.div
+                    ref={ref}
+                    style={{
+                      scale: scaleProgress,
+                      opacity: opacityProgress,
+                    }}
+                    className='relative z-10 my-4'
+                  >
                     <img
                       src='https://i.ibb.co/9y7nYCD/image-3.jpg'
                       alt=''
@@ -599,26 +630,47 @@ const About1 = () => {
                         />
                       </svg>
                     </span>
-                  </div>
+                  </motion.div>
                 </div>
               </div>
             </div>
 
             <div className='w-full px-4 lg:w-1/2 xl:w-5/12'>
               <div className='mt-10 lg:mt-0'>
-                <h2 className='mb-5 text-3xl font-bold text-dark  font-custom sm:text-[40px]/[48px]'>
+                <motion.h2
+                  ref={ref}
+                  style={{
+                    scale: scaleProgress,
+                    opacity: opacityProgress,
+                  }}
+                  className='mb-5 text-3xl font-bold text-dark  font-custom sm:text-[40px]/[48px]'
+                >
                   About me
-                </h2>
-                <p className='mb-5 text-base text-body-color dark:text-dark-6'>
+                </motion.h2>
+                <motion.p
+                  ref={ref}
+                  style={{
+                    scale: scaleProgress,
+                    opacity: opacityProgress,
+                  }}
+                  className='mb-5 text-base text-body-color dark:text-dark-6'
+                >
                   It is a long established fact that a reader will be distracted
                   by the readable content of a page when looking at its layout.
                   The point of using Lorem Ipsum is that it has a more-or-less.
-                </p>
-                <p className='mb-8 text-base text-body-color dark:text-dark-6'>
+                </motion.p>
+                <motion.p
+                  ref={ref}
+                  style={{
+                    scale: scaleProgress,
+                    opacity: opacityProgress,
+                  }}
+                  className='mb-8 text-base text-body-color dark:text-dark-6'
+                >
                   A domain name is one of the first steps to establishing your
                   brand. Secure a consistent brand image with a domain name that
                   matches your business.
-                </p>
+                </motion.p>
               </div>
             </div>
           </div>

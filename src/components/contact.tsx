@@ -37,7 +37,7 @@ const Contact = () => {
                       My Location
                     </h4>
                     <p className='text-base text-body-color dark:text-dark-6'>
-                      99 S.t Jomblo Park Pekanbaru 28292. Indonesia
+                      Kampala . Uganda
                     </p>
                   </div>
                 </div>
@@ -77,7 +77,7 @@ const Contact = () => {
                       Phone Number
                     </h4>
                     <p className='text-base text-body-color dark:text-dark-6'>
-                      (+62)81 414 257 9980
+                      (+256)760 807 822
                     </p>
                   </div>
                 </div>
@@ -102,7 +102,7 @@ const Contact = () => {
                       Email Address
                     </h4>
                     <p className='text-base text-body-color dark:text-dark-6'>
-                      info@yourdomain.com
+                      shafiquedev256@gmail.com
                     </p>
                   </div>
                 </div>
