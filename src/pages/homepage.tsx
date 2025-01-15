@@ -6,15 +6,16 @@ import Portfolio from "../components/portfolio";
 const HomePage = () => {
   return (
     <>
-      <div className='bg-gray-900 relative '>
+      <div className='bg-gray-900 relative min-h-screen '>
         <HeroSection />
         <div className='w-[100%] overflow-hidden'>
           <Portfolio />
           <About1 />
           <Contact />
         </div>
-
-        <footer className=' rounded-t-lg shadow m-4 bg-gray-800'>
+      </div>
+      <div className='bg-gray-900'>
+        <footer className=' rounded-t-lg shadow mx-4 bg-gray-800'>
           <div className='w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between'>
             <span className='text-sm  sm:text-center text-gray-400'>
               © 2023{" "}
