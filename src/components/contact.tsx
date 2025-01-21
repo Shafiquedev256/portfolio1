@@ -13,9 +13,9 @@ const Contact = () => {
                   GET IN TOUCH WITH ME
                 </h2>
                 <p className='mb-9  text-sm leading-relaxed text-body-color dark:text-dark-6'>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eius tempor incididunt ut labore e dolore magna aliqua. Ut
-                  enim adiqua minim veniam quis nostrud exercitation ullamco
+                  Got a project in mind or just want to say hi? I’m always open
+                  to new opportunities and collaborations. Drop me a message,
+                  and I’ll get back to you as soon as I can!
                 </p>
                 <div className='mb-8 flex  w-full max-w-[370px]'>
                   <div className='mr-6 text-rose-500 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-rose-500/10 text-primary sm:h-[70px] sm:max-w-[70px]'>

@@ -1,60 +1,29 @@
-import { useScroll, motion, useTransform } from "motion/react";
-import { useRef } from "react";
-
 const About1 = () => {
-  const ref = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["0 1", "1.1 1"],
-  });
-  const scaleProgress = useTransform(scrollYProgress, [0, 0.5], [0.8, 1]);
-  const opacityProgress = useTransform(scrollYProgress, [0, 0.5], [0.8, 1]);
   return (
     <>
       <section className='overflow-hidden font-body pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] text-white'>
         <div className='container mx-auto '>
-          <div className='flex flex-wrap items-center justify-between mx-4'>
-            <div className='w-full px-4 lg:w-6/12'>
-              <div className='flex items-center mx-3 sm:-mx-4'>
-                <div className='w-full px-3 sm:px-4 xl:w-1/2'>
-                  <motion.div
-                    ref={ref}
-                    style={{
-                      scale: scaleProgress,
-                      opacity: opacityProgress,
-                    }}
-                    className='py-3 sm:py-4'
-                  >
+          <div className='flex flex-col md:flex-row items-center justify-between mx-2 md:mx-4'>
+            <div className='w-full px-2 md:px-4 lg:w-6/12'>
+              <div className='flex items-center md:mx-3 sm:-mx-4'>
+                <div className='w-full md:px-3 sm:px-4 xl:w-1/2'>
+                  <div className='py-3 sm:py-4'>
                     <img
                       src='https://i.ibb.co/gFb3ns6/image-1.jpg'
                       alt=''
                       className='w-full rounded-2xl'
                     />
-                  </motion.div>
-                  <motion.div
-                    ref={ref}
-                    style={{
-                      scale: scaleProgress,
-                      opacity: opacityProgress,
-                    }}
-                    className='py-3 sm:py-4'
-                  >
+                  </div>
+                  <div className='py-3 sm:py-4'>
                     <img
                       src='https://i.ibb.co/rfHFq15/image-2.jpg'
                       alt=''
                       className='w-full rounded-2xl'
                     />
-                  </motion.div>
+                  </div>
                 </div>
                 <div className='w-full px-3 sm:px-4 xl:w-1/2'>
-                  <motion.div
-                    ref={ref}
-                    style={{
-                      scale: scaleProgress,
-                      opacity: opacityProgress,
-                    }}
-                    className='relative z-10 my-4'
-                  >
+                  <div className='relative z-10 my-4'>
                     <img
                       src='https://i.ibb.co/9y7nYCD/image-3.jpg'
                       alt=''
@@ -630,47 +599,49 @@ const About1 = () => {
                         />
                       </svg>
                     </span>
-                  </motion.div>
+                  </div>
                 </div>
               </div>
             </div>
 
             <div className='w-full px-4 lg:w-1/2 xl:w-5/12'>
               <div className='mt-10 lg:mt-0'>
-                <motion.h2
-                  ref={ref}
-                  style={{
-                    scale: scaleProgress,
-                    opacity: opacityProgress,
-                  }}
-                  className='mb-5 text-3xl font-bold text-dark  font-custom sm:text-[40px]/[48px]'
-                >
+                <h2 className='mb-5 text-3xl font-bold text-dark  font-custom sm:text-[40px]/[48px]'>
                   About me
-                </motion.h2>
-                <motion.p
-                  ref={ref}
-                  style={{
-                    scale: scaleProgress,
-                    opacity: opacityProgress,
-                  }}
-                  className='mb-5 text-base text-body-color dark:text-dark-6'
-                >
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                  The point of using Lorem Ipsum is that it has a more-or-less.
-                </motion.p>
-                <motion.p
-                  ref={ref}
-                  style={{
-                    scale: scaleProgress,
-                    opacity: opacityProgress,
-                  }}
-                  className='mb-8 text-base text-body-color dark:text-dark-6'
-                >
-                  A domain name is one of the first steps to establishing your
-                  brand. Secure a consistent brand image with a domain name that
-                  matches your business.
-                </motion.p>
+                </h2>
+                <p className='mb-5 text-base text-body-color dark:text-dark-6'>
+                  Hi, I’m <b>Musinguzi Shafiq</b>, a passionate{" "}
+                  <b>frontend developer</b> specializing in building modern,
+                  responsive, and user-friendly websites. With over{" "}
+                  <b>two years of experience</b>, I’ve worked with local
+                  businesses across Uganda to create impactful web solutions
+                  that help them grow and stand out in the digital space.
+                </p>
+                <p className='mb-8 text-base text-body-color dark:text-dark-6'>
+                  I’m a <b>self-taught developer</b> with expertise in{" "}
+                  <b>
+                    React, Tailwind CSS, TypeScript, Node.js, MongoDB, and
+                    Express.js
+                  </b>{" "}
+                  . My approach is rooted in combining sleek design with
+                  seamless functionality to deliver projects that not only look
+                  great but also perform exceptionally well.
+                </p>
+                <p className='mb-8 text-base text-body-color dark:text-dark-6'>
+                  I thrive in <b>remote work environments</b> , where I can
+                  collaborate with diverse teams and clients to turn ideas into
+                  reality. Whether it’s designing a custom website, integrating
+                  APIs, or optimizing performance, I’m always up for a challenge
+                  that allows me to grow and make a difference.
+                </p>
+                <p className='mb-8 text-base text-body-color dark:text-dark-6'>
+                  When I’m not coding, you’ll likely find me exploring creative
+                  ideas, learning new technologies, or brainstorming ways to
+                  help local businesses succeed online.
+                </p>
+                <p className='mb-8 text-base text-body-color dark:text-dark-6'>
+                  Let’s work together to bring your vision to life!
+                </p>
               </div>
             </div>
           </div>
