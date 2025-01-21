@@ -1,7 +1,9 @@
 import { useScroll, motion, useTransform } from "motion/react";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
-
+import img1 from "../assets/games.png";
+import img2 from "../assets/openflow .png";
+import img3 from "../assets/sitigym.png";
 const Portfolio = () => {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -46,46 +48,25 @@ const Portfolio = () => {
           </div>
           <div className='flex flex-wrap items-center justify-center -mx-4'>
             <PortfolioCard
-              ImageHref='https://i.ibb.co/64WfFPt/image-01.jpg'
-              category='Branding'
-              title='Creative Agency'
+              ImageHref={img1}
+              category='Video Games E-commerce'
+              title='S.M Games'
               button='View Details'
-              buttonHref='#'
+              buttonHref='/details/project-1'
             />
             <PortfolioCard
-              ImageHref='https://i.ibb.co/PT7ghRs/image-06.jpg'
-              category='marketing'
-              title='Creative Agency'
+              ImageHref={img2}
+              category='Logistics website'
+              title='Open Flow Logistics'
               button='View Details'
-              buttonHref='#'
+              buttonHref='/details/project-1'
             />
             <PortfolioCard
-              ImageHref='https://i.ibb.co/vkt8C1P/image-02.jpg'
-              category='marketing'
-              title='Creative Agency'
+              ImageHref={img3}
+              category='GYM Website'
+              title='Siti gym Kampala'
               button='View Details'
-              buttonHref='#'
-            />
-            <PortfolioCard
-              ImageHref='https://i.ibb.co/3FKqS1G/image-03.jpg'
-              category='Development'
-              title='Creative Agency'
-              button='View Details'
-              buttonHref='#'
-            />
-            <PortfolioCard
-              ImageHref='https://i.ibb.co/m6dq2fX/image-04.jpg'
-              category='Design'
-              title='Creative Agency'
-              button='View Details'
-              buttonHref='#'
-            />
-            <PortfolioCard
-              ImageHref='https://i.ibb.co/mCPjBsH/image-05.jpg'
-              category='Marketing'
-              title='Creative Agency'
-              button='View Details'
-              buttonHref='#'
+              buttonHref='/details/project-1'
             />
           </div>
         </div>
@@ -118,13 +99,13 @@ const PortfolioCard = ({
           scale: scaleProgress,
           opacity: opacityProgress,
         }}
-        className={"w-[90%] px-4 md:w-1/2 xl:w-1/3 "}
+        className={"w-[90%] px-4 md:w-1/2 xl:w-1/3 h-[250px] my-11"}
       >
         <div className='relative mb-12'>
-          <div className='overflow-hidden rounded-[10px]'>
-            <img src={ImageHref} alt='portfolio' className='w-full' />
+          <div className='overflow-hidden rounded-[10px] h-[200px]'>
+            <img src={ImageHref} alt='portfolio' className='w-full h-[200px]' />
           </div>
-          <div className='relative z-10 mx-7 -mt-20 rounded-lg bg-gray-800 dark:bg-dark-2 py-[34px] px-3 text-center shadow-portfolio dark:shadow-box-dark'>
+          <div className='relative z-10 mx-7 -mt-10  rounded-lg bg-gray-800  py-[20px] px-2 text-center '>
             <span className='text-primary mb-2 block text-sm font-medium'>
               {category}
             </span>

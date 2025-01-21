@@ -2,6 +2,13 @@ import Header from "./header";
 import { TypewriterEffect } from "./typingeffect";
 
 const HeroSection = () => {
+  const handleWhatsAppRedirect = () => {
+    const phoneNumber = "+256394772051";
+    const message = "Hello Shafiq!";
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+    window.open(url, "_blank");
+  };
   return (
     <>
       <Header />
@@ -35,7 +42,10 @@ const HeroSection = () => {
               experience.
             </p>
             <div className='sm:mt-4 mt-2 my-8'>
-              <button className='px-6 py-2 font-semibold text-center bg-rose-600 text-white rounded-sm'>
+              <button
+                onClick={handleWhatsAppRedirect}
+                className='px-6 py-2 font-semibold text-center bg-rose-600 text-white rounded-sm'
+              >
                 Get In Touch
               </button>
             </div>
