@@ -14,3 +14,12 @@
 body {
   background-color: rgb(17 24 39 / var(--tw-bg-opacity, 1));
 }
+
+.imgbg {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    35deg,
+    rgba(255, 255, 255, 1) 52%,
+    rgba(209, 212, 209, 1) 53%
+  );
+}

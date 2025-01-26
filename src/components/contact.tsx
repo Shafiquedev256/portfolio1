@@ -6,10 +6,10 @@ const Contact = () => {
           <div className='mx-4 flex flex-wrap lg:justify-between'>
             <div className='w-full px-4 lg:w-1/2 xl:w-6/12'>
               <div className='mb-12 max-w-[570px] lg:mb-0'>
-                <span className='mb-4 block text-base font-semibold text-rose-500 text-primary'>
+                <span className='mb-4 block text-base font-semibold  text-primary'>
                   Contact Me
                 </span>
-                <h2 className='mb-6 text-[32px] font-custom font-bold uppercase text-dark  sm:text-[40px] lg:text-[36px] xl:text-[40px]'>
+                <h2 className='mb-6 text-[32px] text-green-500 font-custom font-bold uppercase text-dark  sm:text-[40px] lg:text-[36px] xl:text-[40px]'>
                   GET IN TOUCH WITH ME
                 </h2>
                 <p className='mb-9  text-sm leading-relaxed text-body-color dark:text-dark-6'>
@@ -18,7 +18,7 @@ const Contact = () => {
                   and I’ll get back to you as soon as I can!
                 </p>
                 <div className='mb-8 flex  w-full max-w-[370px]'>
-                  <div className='mr-6 text-rose-500 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-rose-500/10 text-primary sm:h-[70px] sm:max-w-[70px]'>
+                  <div className='mr-6 text-green-500 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-green-500/10 text-primary sm:h-[70px] sm:max-w-[70px]'>
                     <svg
                       width='32'
                       height='32'
@@ -43,7 +43,7 @@ const Contact = () => {
                 </div>
 
                 <div className='mb-8 flex w-full max-w-[370px]'>
-                  <div className='mr-6 flex text-rose-500 bg-rose-500/10 h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded  text-primary sm:h-[70px] sm:max-w-[70px]'>
+                  <div className='mr-6 flex text-green-500 bg-green-500/10 h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded  text-primary sm:h-[70px] sm:max-w-[70px]'>
                     <svg
                       width='32'
                       height='32'
@@ -83,7 +83,7 @@ const Contact = () => {
                 </div>
 
                 <div className='mb-8 flex w-full max-w-[370px]'>
-                  <div className='mr-6 text-rose-500 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-rose-500/10 text-primary sm:h-[70px] sm:max-w-[70px]'>
+                  <div className='mr-6 text-green-500 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-green-500/10 text-primary sm:h-[70px] sm:max-w-[70px]'>
                     <svg
                       width='32'
                       height='32'
@@ -135,7 +135,7 @@ const Contact = () => {
                   <div>
                     <button
                       type='submit'
-                      className='w-full rounded   bg-rose-500 p-3 text-white transition hover:bg-opacity-90'
+                      className='w-full rounded   bg-green-500 p-3 text-white transition hover:bg-opacity-90'
                     >
                       Send Message
                     </button>
@@ -158,7 +158,7 @@ const Contact = () => {
                       />
                     </svg>
                   </span>
-                  <span className='absolute -right-10 top-[90px] z-[-1]'>
+                  <span className='absolute -right-10 top-[90px] text-green-600 z-[-1]'>
                     <svg
                       width={34}
                       height={134}
@@ -171,214 +171,214 @@ const Contact = () => {
                         cy={132}
                         r='1.66667'
                         transform='rotate(180 31.9993 132)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='31.9993'
                         cy='117.333'
                         r='1.66667'
                         transform='rotate(180 31.9993 117.333)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='31.9993'
                         cy='102.667'
                         r='1.66667'
                         transform='rotate(180 31.9993 102.667)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='31.9993'
                         cy={88}
                         r='1.66667'
                         transform='rotate(180 31.9993 88)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='31.9993'
                         cy='73.3333'
                         r='1.66667'
                         transform='rotate(180 31.9993 73.3333)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='31.9993'
                         cy={45}
                         r='1.66667'
                         transform='rotate(180 31.9993 45)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='31.9993'
                         cy={16}
                         r='1.66667'
                         transform='rotate(180 31.9993 16)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='31.9993'
                         cy={59}
                         r='1.66667'
                         transform='rotate(180 31.9993 59)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='31.9993'
                         cy='30.6666'
                         r='1.66667'
                         transform='rotate(180 31.9993 30.6666)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='31.9993'
                         cy='1.66665'
                         r='1.66667'
                         transform='rotate(180 31.9993 1.66665)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='17.3333'
                         cy={132}
                         r='1.66667'
                         transform='rotate(180 17.3333 132)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='17.3333'
                         cy='117.333'
                         r='1.66667'
                         transform='rotate(180 17.3333 117.333)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='17.3333'
                         cy='102.667'
                         r='1.66667'
                         transform='rotate(180 17.3333 102.667)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='17.3333'
                         cy={88}
                         r='1.66667'
                         transform='rotate(180 17.3333 88)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='17.3333'
                         cy='73.3333'
                         r='1.66667'
                         transform='rotate(180 17.3333 73.3333)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='17.3333'
                         cy={45}
                         r='1.66667'
                         transform='rotate(180 17.3333 45)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='17.3333'
                         cy={16}
                         r='1.66667'
                         transform='rotate(180 17.3333 16)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='17.3333'
                         cy={59}
                         r='1.66667'
                         transform='rotate(180 17.3333 59)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='17.3333'
                         cy='30.6666'
                         r='1.66667'
                         transform='rotate(180 17.3333 30.6666)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='17.3333'
                         cy='1.66665'
                         r='1.66667'
                         transform='rotate(180 17.3333 1.66665)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='2.66536'
                         cy={132}
                         r='1.66667'
                         transform='rotate(180 2.66536 132)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='2.66536'
                         cy='117.333'
                         r='1.66667'
                         transform='rotate(180 2.66536 117.333)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='2.66536'
                         cy='102.667'
                         r='1.66667'
                         transform='rotate(180 2.66536 102.667)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='2.66536'
                         cy={88}
                         r='1.66667'
                         transform='rotate(180 2.66536 88)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='2.66536'
                         cy='73.3333'
                         r='1.66667'
                         transform='rotate(180 2.66536 73.3333)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='2.66536'
                         cy={45}
                         r='1.66667'
                         transform='rotate(180 2.66536 45)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='2.66536'
                         cy={16}
                         r='1.66667'
                         transform='rotate(180 2.66536 16)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='2.66536'
                         cy={59}
                         r='1.66667'
                         transform='rotate(180 2.66536 59)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='2.66536'
                         cy='30.6666'
                         r='1.66667'
                         transform='rotate(180 2.66536 30.6666)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='2.66536'
                         cy='1.66665'
                         r='1.66667'
                         transform='rotate(180 2.66536 1.66665)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                     </svg>
                   </span>
-                  <span className='absolute -bottom-7 -left-7 z-[-1]'>
+                  <span className='absolute text-green-600 -bottom-7 -left-7 z-[-1]'>
                     <svg
                       width={107}
                       height={134}
@@ -391,560 +391,560 @@ const Contact = () => {
                         cy={132}
                         r='1.66667'
                         transform='rotate(180 104.999 132)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='104.999'
                         cy='117.333'
                         r='1.66667'
                         transform='rotate(180 104.999 117.333)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='104.999'
                         cy='102.667'
                         r='1.66667'
                         transform='rotate(180 104.999 102.667)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='104.999'
                         cy={88}
                         r='1.66667'
                         transform='rotate(180 104.999 88)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='104.999'
                         cy='73.3333'
                         r='1.66667'
                         transform='rotate(180 104.999 73.3333)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='104.999'
                         cy={45}
                         r='1.66667'
                         transform='rotate(180 104.999 45)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='104.999'
                         cy={16}
                         r='1.66667'
                         transform='rotate(180 104.999 16)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='104.999'
                         cy={59}
                         r='1.66667'
                         transform='rotate(180 104.999 59)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='104.999'
                         cy='30.6666'
                         r='1.66667'
                         transform='rotate(180 104.999 30.6666)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='104.999'
                         cy='1.66665'
                         r='1.66667'
                         transform='rotate(180 104.999 1.66665)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='90.3333'
                         cy={132}
                         r='1.66667'
                         transform='rotate(180 90.3333 132)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='90.3333'
                         cy='117.333'
                         r='1.66667'
                         transform='rotate(180 90.3333 117.333)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='90.3333'
                         cy='102.667'
                         r='1.66667'
                         transform='rotate(180 90.3333 102.667)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='90.3333'
                         cy={88}
                         r='1.66667'
                         transform='rotate(180 90.3333 88)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='90.3333'
                         cy='73.3333'
                         r='1.66667'
                         transform='rotate(180 90.3333 73.3333)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='90.3333'
                         cy={45}
                         r='1.66667'
                         transform='rotate(180 90.3333 45)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='90.3333'
                         cy={16}
                         r='1.66667'
                         transform='rotate(180 90.3333 16)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='90.3333'
                         cy={59}
                         r='1.66667'
                         transform='rotate(180 90.3333 59)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='90.3333'
                         cy='30.6666'
                         r='1.66667'
                         transform='rotate(180 90.3333 30.6666)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='90.3333'
                         cy='1.66665'
                         r='1.66667'
                         transform='rotate(180 90.3333 1.66665)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='75.6654'
                         cy={132}
                         r='1.66667'
                         transform='rotate(180 75.6654 132)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='31.9993'
                         cy={132}
                         r='1.66667'
                         transform='rotate(180 31.9993 132)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='75.6654'
                         cy='117.333'
                         r='1.66667'
                         transform='rotate(180 75.6654 117.333)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='31.9993'
                         cy='117.333'
                         r='1.66667'
                         transform='rotate(180 31.9993 117.333)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='75.6654'
                         cy='102.667'
                         r='1.66667'
                         transform='rotate(180 75.6654 102.667)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='31.9993'
                         cy='102.667'
                         r='1.66667'
                         transform='rotate(180 31.9993 102.667)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='75.6654'
                         cy={88}
                         r='1.66667'
                         transform='rotate(180 75.6654 88)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='31.9993'
                         cy={88}
                         r='1.66667'
                         transform='rotate(180 31.9993 88)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='75.6654'
                         cy='73.3333'
                         r='1.66667'
                         transform='rotate(180 75.6654 73.3333)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='31.9993'
                         cy='73.3333'
                         r='1.66667'
                         transform='rotate(180 31.9993 73.3333)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='75.6654'
                         cy={45}
                         r='1.66667'
                         transform='rotate(180 75.6654 45)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='31.9993'
                         cy={45}
                         r='1.66667'
                         transform='rotate(180 31.9993 45)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='75.6654'
                         cy={16}
                         r='1.66667'
                         transform='rotate(180 75.6654 16)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='31.9993'
                         cy={16}
                         r='1.66667'
                         transform='rotate(180 31.9993 16)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='75.6654'
                         cy={59}
                         r='1.66667'
                         transform='rotate(180 75.6654 59)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='31.9993'
                         cy={59}
                         r='1.66667'
                         transform='rotate(180 31.9993 59)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='75.6654'
                         cy='30.6666'
                         r='1.66667'
                         transform='rotate(180 75.6654 30.6666)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='31.9993'
                         cy='30.6666'
                         r='1.66667'
                         transform='rotate(180 31.9993 30.6666)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='75.6654'
                         cy='1.66665'
                         r='1.66667'
                         transform='rotate(180 75.6654 1.66665)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='31.9993'
                         cy='1.66665'
                         r='1.66667'
                         transform='rotate(180 31.9993 1.66665)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='60.9993'
                         cy={132}
                         r='1.66667'
                         transform='rotate(180 60.9993 132)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='17.3333'
                         cy={132}
                         r='1.66667'
                         transform='rotate(180 17.3333 132)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='60.9993'
                         cy='117.333'
                         r='1.66667'
                         transform='rotate(180 60.9993 117.333)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='17.3333'
                         cy='117.333'
                         r='1.66667'
                         transform='rotate(180 17.3333 117.333)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='60.9993'
                         cy='102.667'
                         r='1.66667'
                         transform='rotate(180 60.9993 102.667)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='17.3333'
                         cy='102.667'
                         r='1.66667'
                         transform='rotate(180 17.3333 102.667)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='60.9993'
                         cy={88}
                         r='1.66667'
                         transform='rotate(180 60.9993 88)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='17.3333'
                         cy={88}
                         r='1.66667'
                         transform='rotate(180 17.3333 88)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='60.9993'
                         cy='73.3333'
                         r='1.66667'
                         transform='rotate(180 60.9993 73.3333)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='17.3333'
                         cy='73.3333'
                         r='1.66667'
                         transform='rotate(180 17.3333 73.3333)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='60.9993'
                         cy={45}
                         r='1.66667'
                         transform='rotate(180 60.9993 45)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='17.3333'
                         cy={45}
                         r='1.66667'
                         transform='rotate(180 17.3333 45)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='60.9993'
                         cy={16}
                         r='1.66667'
                         transform='rotate(180 60.9993 16)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='17.3333'
                         cy={16}
                         r='1.66667'
                         transform='rotate(180 17.3333 16)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='60.9993'
                         cy={59}
                         r='1.66667'
                         transform='rotate(180 60.9993 59)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='17.3333'
                         cy={59}
                         r='1.66667'
                         transform='rotate(180 17.3333 59)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='60.9993'
                         cy='30.6666'
                         r='1.66667'
                         transform='rotate(180 60.9993 30.6666)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='17.3333'
                         cy='30.6666'
                         r='1.66667'
                         transform='rotate(180 17.3333 30.6666)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='60.9993'
                         cy='1.66665'
                         r='1.66667'
                         transform='rotate(180 60.9993 1.66665)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='17.3333'
                         cy='1.66665'
                         r='1.66667'
                         transform='rotate(180 17.3333 1.66665)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='46.3333'
                         cy={132}
                         r='1.66667'
                         transform='rotate(180 46.3333 132)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='2.66536'
                         cy={132}
                         r='1.66667'
                         transform='rotate(180 2.66536 132)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='46.3333'
                         cy='117.333'
                         r='1.66667'
                         transform='rotate(180 46.3333 117.333)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='2.66536'
                         cy='117.333'
                         r='1.66667'
                         transform='rotate(180 2.66536 117.333)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='46.3333'
                         cy='102.667'
                         r='1.66667'
                         transform='rotate(180 46.3333 102.667)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='2.66536'
                         cy='102.667'
                         r='1.66667'
                         transform='rotate(180 2.66536 102.667)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='46.3333'
                         cy={88}
                         r='1.66667'
                         transform='rotate(180 46.3333 88)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='2.66536'
                         cy={88}
                         r='1.66667'
                         transform='rotate(180 2.66536 88)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='46.3333'
                         cy='73.3333'
                         r='1.66667'
                         transform='rotate(180 46.3333 73.3333)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='2.66536'
                         cy='73.3333'
                         r='1.66667'
                         transform='rotate(180 2.66536 73.3333)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='46.3333'
                         cy={45}
                         r='1.66667'
                         transform='rotate(180 46.3333 45)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='2.66536'
                         cy={45}
                         r='1.66667'
                         transform='rotate(180 2.66536 45)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='46.3333'
                         cy={16}
                         r='1.66667'
                         transform='rotate(180 46.3333 16)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='2.66536'
                         cy={16}
                         r='1.66667'
                         transform='rotate(180 2.66536 16)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='46.3333'
                         cy={59}
                         r='1.66667'
                         transform='rotate(180 46.3333 59)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='2.66536'
                         cy={59}
                         r='1.66667'
                         transform='rotate(180 2.66536 59)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='46.3333'
                         cy='30.6666'
                         r='1.66667'
                         transform='rotate(180 46.3333 30.6666)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='2.66536'
                         cy='30.6666'
                         r='1.66667'
                         transform='rotate(180 2.66536 30.6666)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='46.3333'
                         cy='1.66665'
                         r='1.66667'
                         transform='rotate(180 46.3333 1.66665)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                       <circle
                         cx='2.66536'
                         cy='1.66665'
                         r='1.66667'
                         transform='rotate(180 2.66536 1.66665)'
-                        fill='#fb1d46'
+                        fill='currentColor'
                       />
                     </svg>
                   </span>
