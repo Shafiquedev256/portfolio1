@@ -1,6 +1,65 @@
+import { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
+
 const Contact = () => {
+  const form = useRef<any>();
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
+  const [alert, setAlert] = useState(false);
+  const [error, setError] = useState<
+    null | "Sorry Message not sent! Please send direct email"
+  >(null);
+  const sendEmail = (e: any) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
+        form.current,
+        {
+          publicKey: import.meta.env.VITE_PUBLIC_KEY,
+        }
+      )
+      .then(
+        () => {
+          console.log("SUCCESS!");
+          setAlert(true);
+          setEmail("");
+          setPhone("");
+          setMessage("");
+          setName("");
+          setTimeout(() => {
+            setAlert(false);
+          }, 5000);
+        },
+        (error) => {
+          setError("Sorry Message not sent! Please send direct email");
+          console.log("FAILED...", error.text);
+          setTimeout(() => {
+            setError(null);
+          }, 5000);
+        }
+      );
+  };
   return (
     <>
+      {alert && (
+        <div className='fixed top-0 left-0 w-[100%] flex justify-center items-center  z-50'>
+          <p className='bg-green-100 font-semibold text-green-800 w-fit px-3 py-2 font-body my-4 rounded-lg'>
+            Thanks for reaching out! I will reply as soon as possible 😊!{" "}
+          </p>
+        </div>
+      )}
+      {error && (
+        <div className='fixed top-0 left-0 w-[100%] flex justify-center items-center  z-50'>
+          <p className='bg-red-100 font-semibold text-red-800 w-fit px-3 py-2 font-body my-4 rounded-lg'>
+            {error}
+          </p>
+        </div>
+      )}
       <section className='relative z-10 w-[100%] overflow-hidden font-body text-white py-20 dark:bg-dark lg:py-[120px]'>
         <div className='container'>
           <div className='mx-4 flex flex-wrap lg:justify-between'>
@@ -110,27 +169,51 @@ const Contact = () => {
             </div>
             <div className='w-full px-4 lg:w-1/2 xl:w-5/12'>
               <div className='relative rounded-lg bg-gray-800 p-8 shadow-lg dark:bg-dark-2 sm:p-12'>
-                <form>
-                  <ContactInputBox
+                <form ref={form} onSubmit={sendEmail}>
+                  <input
+                    value={name}
+                    onChange={(e) => {
+                      setName(e.target.value);
+                    }}
+                    className='mb-6 w-full bg-gray-900 rounded   px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6'
                     type='text'
-                    name='name'
+                    name='from_name'
                     placeholder='Your Name'
+                    required
                   />
-                  <ContactInputBox
+                  <input
+                    onChange={(e) => {
+                      setEmail(e.target.value);
+                    }}
+                    value={email}
+                    className='mb-6 w-full bg-gray-900 rounded   px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6'
                     type='text'
-                    name='email'
+                    name='from_email'
                     placeholder='Your Email'
+                    required
                   />
-                  <ContactInputBox
+                  <input
+                    value={phone}
+                    onChange={(e) => {
+                      setPhone(e.target.value);
+                    }}
+                    className='mb-6 w-full bg-gray-900 rounded   px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6'
                     type='text'
-                    name='phone'
+                    name='from_phone'
                     placeholder='Your Phone'
+                    required
                   />
-                  <ContactTextArea
-                    row='6'
+                  <textarea
+                    onChange={(e) => {
+                      setMessage(e.target.value);
+                    }}
+                    value={message}
+                    className='mb-6 w-full bg-gray-900 resize-none rounded   px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6'
+                    rows={6}
                     placeholder='Your Message'
-                    name='details'
+                    name='message'
                     defaultValue=''
+                    required
                   />
                   <div>
                     <button
@@ -959,34 +1042,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
-const ContactTextArea = ({ row, placeholder, name, defaultValue }: any) => {
-  return (
-    <>
-      <div className='mb-6'>
-        <textarea
-          rows={row}
-          placeholder={placeholder}
-          name={name}
-          className='w-full bg-gray-900 resize-none rounded   px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6'
-          defaultValue={defaultValue}
-        />
-      </div>
-    </>
-  );
-};
-
-const ContactInputBox = ({ type, placeholder, name }: any) => {
-  return (
-    <>
-      <div className='mb-6'>
-        <input
-          type={type}
-          placeholder={placeholder}
-          name={name}
-          className='w-full bg-gray-900 rounded   px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6'
-        />
-      </div>
-    </>
-  );
-};
