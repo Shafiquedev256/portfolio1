@@ -9,7 +9,7 @@ const HomePage = () => {
     <>
       <div className='bg-gray-900 relative min-h-screen '>
         <HeroSection />
-        <div className='w-[100%] overflow-hidden'>
+        <div className='w-[100%] hidden overflow-hidden'>
           <Portfolio />
           <About1 />
           <Contact />

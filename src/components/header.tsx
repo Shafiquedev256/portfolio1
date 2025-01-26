@@ -40,23 +40,23 @@ const Header = () => {
           <ul className='md:flex items-center font-semibold justify-between text-base text-gray-100 dark:text-gray-600 pt-4 md:pt-0'>
             <li>
               <Link
-                className='md:p-4 py-3 px-0 block hover:text-rose-500'
-                to='/portfolio'
+                className='md:p-4 py-3 px-0 block hover:text-green-500'
+                to='/'
               >
                 Portfolio
               </Link>
             </li>
             <li>
               <Link
-                className='md:p-4 py-3 px-0 block hover:text-rose-500'
-                to='/about'
+                className='md:p-4 py-3 px-0 block hover:text-green-500'
+                to='/'
               >
                 About
               </Link>
             </li>
             <li>
               <Link
-                className='md:p-4 py-3 px-0 block hover:text-rose-500 active:text-rose-500'
+                className='md:p-4 py-3 px-0 block hover:text-green-500 active:text-green-500'
                 to='/contact'
               >
                 Contact

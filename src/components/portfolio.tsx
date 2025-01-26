@@ -26,10 +26,10 @@ const Portfolio = () => {
                 }}
                 className=' mb-[60px] max-w-[510px] text-center'
               >
-                <span className='text-primary mb-2 block text-lg font-semibold text-rose-500'>
+                <span className='text-primary mb-2 block text-lg font-semibold '>
                   My Portfolio
                 </span>
-                <h2 className='font-custom mb-3 text-3xl leading-[1.208] font-bold sm:text-4xl md:text-[40px]'>
+                <h2 className='font-custom mb-3 text-green-500 text-3xl leading-[1.208] font-bold sm:text-4xl md:text-[40px]'>
                   My Recent Projects
                 </h2>
                 <p className=' text-center mx-2 dark:text-dark-6'>
@@ -106,7 +106,7 @@ const PortfolioCard = ({
             <img src={ImageHref} alt='portfolio' className='w-full h-[200px]' />
           </div>
           <div className='relative z-10 mx-7 -mt-10  rounded-lg bg-gray-800  py-[20px] px-2 text-center '>
-            <span className='text-primary mb-2 block text-sm font-medium'>
+            <span className='text-primary text-green-500 mb-2 block text-sm font-medium'>
               {category}
             </span>
             <h3 className='text-dark dark:text-white mb-5 text-xl font-bold'>
@@ -114,7 +114,7 @@ const PortfolioCard = ({
             </h3>
             <Link
               to={buttonHref}
-              className='text-body-color dark:text-dark-6 hover:border-rose-500 hover:bg-rose-500 inline-block rounded-md border border-stroke dark:border-dark-3 py-[10px] px-7 text-sm font-medium transition hover:text-white'
+              className='text-body-color dark:text-dark-6 hover:border-green-500 hover:bg-green-500 inline-block rounded-md border border-stroke border-green-500  py-[10px] px-7 text-sm font-medium transition hover:text-white'
             >
               {button}
             </Link>
