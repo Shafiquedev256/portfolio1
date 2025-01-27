@@ -11,9 +11,13 @@ const HomePage = () => {
         <HeroSection />
         <div className='w-[100%] hidden overflow-hidden'>
           <Portfolio />
-          <About1 />
-          <Contact />
+          
         </div>
+        <div className='w-[100%] overflow-hidden'>
+
+        <About1 />
+          <Contact />
+          </div>
       </div>
       <FooterSection />
     </>
