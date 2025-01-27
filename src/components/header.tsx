@@ -49,7 +49,7 @@ const Header = () => {
             <li>
               <Link
                 className='md:p-4 py-3 px-0 block hover:text-green-500'
-                to='/'
+                to='/about'
               >
                 About
               </Link>
