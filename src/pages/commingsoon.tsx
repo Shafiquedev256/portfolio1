@@ -12,7 +12,7 @@ const Countdown = () => {
   });
 
   useEffect(() => {
-    const destinationDate = new Date("Feb 28, 2025 23:59:59").getTime();
+    const destinationDate = new Date("Mar 15, 2025 23:59:59").getTime();
 
     const interval = setInterval(() => {
       const now = new Date().getTime();
@@ -128,7 +128,7 @@ const Countdown = () => {
                 </div>
                 <div className='w-full flex-col justify-center items-center gap-5 flex'>
                   <h6 className='text-center text-green-400 text-base font-semibold leading-relaxed'>
-                    Launching Date: Feb 28, 2025
+                    Launching Date: March 15, 2025
                   </h6>
                   <div className='justify-center items-center gap-2.5 flex sm:flex-row flex-col'>
                     <Link
