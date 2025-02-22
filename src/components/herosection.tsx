@@ -12,7 +12,7 @@ const HeroSection = () => {
   return (
     <>
       <Header />
-      <div className='w-full h-full   dark:bg-gray-200 '>
+      <div className='w-full h-full  '>
         <div className='h-full w-full my-6 py-20 mx-auto relative top-12 xl:px-16 px-8  flex md:flex-row flex-col gap-4 justify-center items-center pb-10 pt-4'>
           <div className='w-full pb-10 relative'>
             <img
@@ -32,7 +32,7 @@ const HeroSection = () => {
             </h1>
             <h3 className='text-lg text-green-400 flex flex-row space-x-3'>
               <span>I'm a </span>
-              <span className='typing text-green-500 dark:text-green-700'>
+              <span className='typing text-green-500  '>
                 <TypewriterEffect />
               </span>
             </h3>
