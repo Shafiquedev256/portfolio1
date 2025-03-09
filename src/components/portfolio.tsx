@@ -1,7 +1,6 @@
 import { useScroll, motion, useTransform } from "motion/react";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
-import img1 from "../assets/games.png";
 import img2 from "../assets/openflow .png";
 import img3 from "../assets/sitigym.png";
 const Portfolio = () => {
