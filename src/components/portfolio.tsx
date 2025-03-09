@@ -1,7 +1,6 @@
 import { useScroll, motion, useTransform } from "motion/react";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
-import img1 from "../assets/games.png";
 import img2 from "../assets/openflow .png";
 import img3 from "../assets/sitigym.png";
 const Portfolio = () => {
@@ -47,19 +46,20 @@ const Portfolio = () => {
             <div className='w-full px-4'></div>
           </div>
           <div className='flex flex-wrap items-center justify-center -mx-4'>
-            <PortfolioCard
+            {/**  <PortfolioCard
               ImageHref={img1}
               category='Video Games E-commerce'
               title='S.M Games'
               button='View Details'
               buttonHref='/details/project-1'
-            />
+            />*/}
+
             <PortfolioCard
               ImageHref={img2}
               category='Logistics website'
               title='Open Flow Logistics'
               button='View Details'
-              buttonHref='/details/project-1'
+              buttonHref='/details/project-2'
             />
             <PortfolioCard
               ImageHref={img3}

@@ -38,8 +38,7 @@ const HeroSection = () => {
             </h3>
             <p className='text-lg'>
               Experienced website developer with 2+ years of expertise in
-              ReactJs, TailwindCSS, ExpressJs, Nodejs, MongoDB, and some Flutter
-              experience.
+              ReactJs, TailwindCSS, ExpressJs, Nodejs, MongoDB.
             </p>
             <div className='flex justify-center items-center'>
               <button

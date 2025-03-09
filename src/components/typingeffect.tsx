@@ -7,7 +7,7 @@ export const TypewriterEffect = () => {
         strings: [
           "Reactjs  Developer",
           "MERN stack Developer",
-          "Flutter  Developer",
+          "Frontend  Developer",
         ],
         autoStart: true,
         loop: true,
