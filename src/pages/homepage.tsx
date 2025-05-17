@@ -2,6 +2,7 @@ import About1 from "../components/about";
 import Contact from "../components/contact";
 import FooterSection from "../components/footer";
 import HeroSection from "../components/herosection";
+import Portfolio from "../components/portfolio";
 
 const HomePage = () => {
   return (
@@ -10,6 +11,7 @@ const HomePage = () => {
         <HeroSection />
         <div className='w-[100%] overflow-hidden'>
           <About1 />
+          <Portfolio />
           <Contact />
         </div>
       </div>

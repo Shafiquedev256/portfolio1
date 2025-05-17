@@ -91,9 +91,9 @@ const projects = [
     business: "Siti GYM Kampala",
     images: img1,
     intro:
-      "When I was approached to redesign Siti Gym’s website, the challenge was clear: their online presence didn’t reflect the energy, community, and passion that the gym embodies. The existing website felt generic, more like a template than a true representation of what Siti Gym offers. I knew this was an opportunity to create something meaningful—something that connected with their audience and brought the gym’s vibrant spirit to life.",
+      "When I was approached to redesign Siti Gym’s website, the challenge was clear: their online presence didn’t reflect the energy, community, and passion that the gym embodies. The existing website felt generic, more like a template than a true representation of what Siti Gym offers. I knew this was an opportunity to create something meaningful something that connected with their audience and brought the gym’s vibrant spirit to life.",
     approach:
-      "The first step was diving deep into their goals and challenges. I learned that the gym wanted to showcase its classes, transparent pricing, and values while also creating a space that felt inviting and alive. They needed a website that wasn’t just functional but inspiring—a site that captured the heart of their mission.",
+      "The first step was diving deep into their goals and challenges. I learned that the gym wanted to showcase its classes, transparent pricing, and values while also creating a space that felt inviting and alive. They needed a website that wasn’t just functional but inspiring a site that captured the heart of their mission.",
     solution: [
       "A Fresh, Engaging Design: Using Nextjs, Tailwind CSS, and TypeScript, I built a modern and responsive website that feels as dynamic as a gym session.",
       "Highlighting What Matters: I reorganized the content to prominently feature their workout schedules, pricing, and testimonials. Each section was designed to feel authentic and relatable, giving visitors a clear sense of what to expect.",

@@ -1,7 +1,10 @@
 const About1 = () => {
   return (
     <>
-      <section className='overflow-hidden font-body pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] text-white'>
+      <section className='overflow-hidden font-body   text-white'>
+        <h2 className='text-center mt-10 mb-5 text-3xl text-green-600 font-bold text-dark font-custom sm:text-[40px]/[48px]'>
+          About Me
+        </h2>
         <div className='container mx-auto '>
           <div className='flex flex-col md:flex-row items-center justify-between mx-2 md:mx-4'>
             <div className='w-full px-2 md:px-4 lg:w-6/12'>
@@ -606,9 +609,6 @@ const About1 = () => {
 
             <div className='w-full px-4 lg:w-1/2 xl:w-5/12'>
               <div className='mt-10 lg:mt-0'>
-                <h2 className='mb-5 text-3xl text-green-600 font-bold text-dark font-custom sm:text-[40px]/[48px]'>
-                  About Me
-                </h2>
                 <p className='mb-5 text-base text-body-color dark:text-dark-6'>
                   Hi, I’m <b>Musinguzi Shafiq</b>, a passionate{" "}
                   <b>frontend developer</b> and <b>MERN stack developer</b>{" "}

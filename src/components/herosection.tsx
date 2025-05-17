@@ -16,19 +16,19 @@ const HeroSection = () => {
         <div className='h-full w-full my-6 py-20 mx-auto relative top-12 xl:px-16 px-8  flex md:flex-row flex-col gap-4 justify-center items-center pb-10 pt-4'>
           <div className='w-full pb-10 relative'>
             <img
-              className='shadow-2xl  shadow-green-600 animate-[spin_5s_linear_infinite] absolute left-0 right-0 rounded-full lg:max-w-[70%] max-w-[60%] mx-auto'
+              className='shadow-2xl imgbg shadow-green-600  absolute left-0 right-0 rounded-full lg:max-w-[70%] max-w-[60%] mx-auto'
               src='/me.png'
               alt='My Image'
             />
             <img
-              className='relative z-10 imgbg  rounded-full lg:max-w-[70%] max-w-[60%] mx-auto outline outline-[.7rem] outline-offset-[.1rem] outline-green-400/30'
+              className='relative z-10 animation-spin  rounded-full lg:max-w-[70%] max-w-[60%] mx-auto outline outline-[.7rem] outline-offset-[.1rem] outline-green-400/30'
               src='/me.png'
               alt='My Image'
             />
           </div>
           <div className='w-full  font-body flex flex-col justify-center gap-4 md:text-left text-center text-white dark:text-gray-800 md:mt-0 sm:mt-8 mt-4'>
             <h1 className='md:text-4xl sm:text-3xl text-2xl font-semibold tracking-wider font-custom'>
-              Hello, I'm Musinguzi Shafiq
+              Hello, <br /> I'm Musinguzi Shafiq
             </h1>
             <h3 className='text-lg text-green-400 flex flex-row space-x-3'>
               <span>I'm a </span>
@@ -37,7 +37,7 @@ const HeroSection = () => {
               </span>
             </h3>
             <p className='text-lg'>
-              Experienced website developer with 2+ years of expertise in
+              Experienced website developer with 3+ years of expertise in
               ReactJs, TailwindCSS, ExpressJs, Nodejs, MongoDB.
             </p>
             <div className='flex justify-center items-center'>

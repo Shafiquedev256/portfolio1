@@ -13,7 +13,7 @@ const Portfolio = () => {
   const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
   return (
     <>
-      <section className='pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] text-white font-body'>
+      <section className=' pb-12 lg:pt-[120px] lg:pb-[90px] text-white font-body'>
         <div className='container mx-auto'>
           <div className='flex flex-wrap -mx-4'>
             <div className='w-full flex flex-col justify-center items-center px-4'>
@@ -59,14 +59,21 @@ const Portfolio = () => {
               category='Logistics website'
               title='Open Flow Logistics'
               button='View Details'
-              buttonHref='/details/project-2'
+              buttonHref='https://openflowlogistics.vercel.app/'
             />
             <PortfolioCard
               ImageHref={img3}
               category='GYM Website'
               title='Siti gym Kampala'
               button='View Details'
-              buttonHref='/details/project-1'
+              buttonHref='https://sitigym.com'
+            />
+            <PortfolioCard
+              ImageHref={"/wiizz.png"}
+              category='GYM Website'
+              title='Wizz gym'
+              button='View Details'
+              buttonHref='https://wizzgym.com'
             />
           </div>
         </div>
@@ -113,6 +120,7 @@ const PortfolioCard = ({
               {title}
             </h3>
             <Link
+              target='blank'
               to={buttonHref}
               className='text-body-color dark:text-dark-6 hover:border-green-500 hover:bg-green-500 inline-block rounded-md border border-stroke border-green-500  py-[10px] px-7 text-sm font-medium transition hover:text-white'
             >
