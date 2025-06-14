@@ -3,6 +3,7 @@ import { useRef } from "react";
 import { Link } from "react-router-dom";
 import img2 from "../assets/openflow .png";
 import img3 from "../assets/sitigym.png";
+
 const Portfolio = () => {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -54,13 +55,13 @@ const Portfolio = () => {
               buttonHref='/details/project-1'
             />*/}
 
-            <PortfolioCard
+            {/** <PortfolioCard
               ImageHref={img2}
               category='Logistics website'
               title='Open Flow Logistics'
               button='View Details'
               buttonHref='https://openflowlogistics.vercel.app/'
-            />
+            />*/}
             <PortfolioCard
               ImageHref={img3}
               category='GYM Website'

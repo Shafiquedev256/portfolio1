@@ -612,17 +612,17 @@ const About1 = () => {
                 <p className='mb-5 text-base text-body-color dark:text-dark-6'>
                   Hi, I’m <b>Musinguzi Shafiq</b>, a passionate{" "}
                   <b>frontend developer</b> and <b>MERN stack developer</b>{" "}
-                  specializing in building modern, responsive, and user-friendly
-                  websites. With over <b>two years of experience</b>, I’ve
-                  worked with local businesses across Uganda and remote clients
+                  specializing in building modern, responsive, and user friendly
+                  websites. With over <b>3+ years of experience</b>, I’ve worked
+                  with local businesses across Uganda and remote clients
                   worldwide to create impactful web solutions that help them
                   grow and stand out in the digital space.
                 </p>
                 <p className='mb-8 text-base text-body-color dark:text-dark-6'>
                   I’m a <b>self-taught developer</b> with expertise in{" "}
                   <b>
-                    React, Tailwind CSS, TypeScript, Node.js, MongoDB, and
-                    Express.js
+                    React, Tailwind CSS, TypeScript, Nextjs, Node.js, MongoDB,
+                    and Express.js
                   </b>{" "}
                   . My approach is rooted in combining sleek design with
                   seamless functionality to deliver projects that not only look

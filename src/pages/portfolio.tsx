@@ -6,7 +6,10 @@ const Portfolio_page = () => {
   return (
     <>
       <Header />
-      <Portfolio />
+      <section>
+        <Portfolio />
+      </section>
+
       <FooterSection />
     </>
   );
