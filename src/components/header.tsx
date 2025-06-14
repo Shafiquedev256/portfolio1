@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   const [open, setOpen] = useState(false);
   return (
-    <header className='bg-gray-900 dark:bg-gray-200 z-50 sticky top-0 lg:px-16 px-4 flex flex-wrap items-center py-4 bg-gray-850 shadow-md'>
+    <header className='bg-gray-900  z-50 sticky top-0 lg:px-16 px-4 flex flex-wrap items-center py-4 bg-gray-850 shadow-md'>
       <div className='flex-1 flex justify-between items-center'>
         <Link
           to='/'
@@ -37,7 +37,7 @@ const Header = () => {
         id='menu'
       >
         <nav>
-          <ul className='md:flex items-center font-semibold justify-between text-base text-gray-100 dark:text-gray-600 pt-4 md:pt-0'>
+          <ul className='md:flex items-center font-semibold justify-between text-base text-gray-100  pt-4 md:pt-0'>
             <li>
               <Link
                 className='md:p-4 py-3 px-0 block hover:text-green-500'

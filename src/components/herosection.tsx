@@ -3,8 +3,8 @@ import { TypewriterEffect } from "./typingeffect";
 
 const HeroSection = () => {
   const handleWhatsAppRedirect = () => {
-    const phoneNumber = "+256394772051";
-    const message = "Hello Shafiq!";
+    const phoneNumber = "+256760807822";
+    const message = "Hello Shafiq dev!";
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
     window.open(url, "_blank");
@@ -26,7 +26,7 @@ const HeroSection = () => {
               alt='My Image'
             />
           </div>
-          <div className='w-full  font-body flex flex-col justify-center gap-4 md:text-left text-center text-white dark:text-gray-800 md:mt-0 sm:mt-8 mt-4'>
+          <div className='w-full  font-body flex flex-col justify-center gap-4 md:text-left text-center text-white  md:mt-0 sm:mt-8 mt-4'>
             <h1 className='md:text-4xl sm:text-3xl text-2xl font-semibold tracking-wider font-custom'>
               Hello, <br /> I'm Musinguzi Shafiq
             </h1>
